@@ -1,9 +1,6 @@
-import nextSvgr from 'next-svgr'
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  images: {},
 }
 
-export default nextSvgr(nextConfig)
+export default nextConfig

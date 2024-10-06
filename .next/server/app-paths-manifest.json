@@ -1,6 +1,7 @@
 {
   "/privacypolicy/page": "app/privacypolicy/page.js",
-  "/page": "app/page.js",
   "/termsofservice/page": "app/termsofservice/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/api/email/route": "app/api/email/route.js",
+  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

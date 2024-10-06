@@ -2,18 +2,15 @@ import React from 'react'
 
 import { cn } from '@/lib/utils'
 import Marquee from '@/components/ui/marquee'
-import AccentLogo from '/public/assets/clients/accentlogo.svg'
-import EkarLogo from '/public/assets/clients/ekarlogo.svg'
-import OstacoLogo from '/public/assets/clients/ostacologo.svg'
-import ProfilletLogo from '/public/assets/clients/profilletlogo.svg'
-import FrankLogo from '/public/assets/clients/franklogo.svg'
+
+import Image from 'next/image'
 
 const reviews = [
-  <AccentLogo className="  object-contain   " />,
-  <EkarLogo className="  object-contain   " />,
-  <ProfilletLogo className="  object-contain   " />,
-  <OstacoLogo className="  object-contain   " />,
-  <FrankLogo className="  object-contain   " />,
+  { src: '/assets/clients/franklogo.svg', alt: 'Frank Logo' },
+  { src: '/assets/clients/accentlogo.svg', alt: 'Accent Logo' },
+  { src: '/assets/clients/ostacologo.svg', alt: 'Ostaco Logo' },
+  { src: '/assets/clients/profilletlogo.svg', alt: 'Profillet Logo' },
+  { src: '/assets/clients/ekarlogo.svg', alt: 'Ekar Logo' },
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)
@@ -25,7 +22,9 @@ const ReviewCard = ({
   children: React.ReactNode
   className?: string
 }) => {
-  return <div className={cn('  m-5    p-4', className)}>{children}</div>
+  return (
+    <div className={cn('  m-5  self-center   p-4', className)}>{children}</div>
+  )
 }
 
 export const Client = () => {
@@ -33,7 +32,9 @@ export const Client = () => {
     <div className="relative flex  my-10  flex-col items-center justify-center overflow-hidden  ">
       <Marquee pauseOnHover className="[--duration:20s] ">
         {reviews.map((logo, index) => (
-          <ReviewCard key={index}>{logo}</ReviewCard>
+          <ReviewCard key={index}>
+            <Image src={logo.src} alt={logo.alt} width={100} height={100} />
+          </ReviewCard>
         ))}
       </Marquee>
 

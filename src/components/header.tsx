@@ -5,7 +5,8 @@ import { Menu, X } from 'lucide-react'
 
 import { RainbowButton } from './ui/rainbow-button'
 import Link from 'next/link'
-import Logo from '/public/assets/logo.svg'
+import Image from 'next/image'
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -21,7 +22,12 @@ export const Header = () => {
         <div className="justify-start items-start flex">
           <div className="w-[146px] h-10 relative">
             <Link href="/">
-              <Logo />
+              <Image
+                src="/assets/logo.svg"
+                alt="logo"
+                width={160}
+                height={100}
+              />
             </Link>
           </div>
         </div>

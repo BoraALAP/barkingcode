@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Logo from '/public/assets/logoWhite.svg'
+import Image from 'next/image'
 
 export const Footer = () => {
   return (
@@ -8,7 +8,12 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0 space-y-4">
-            <Logo />
+            <Image
+              src="/assets/logoWhite.svg"
+              alt="logo"
+              width={160}
+              height={100}
+            />
             <ul className="space-y-2">
               <li>
                 <a
