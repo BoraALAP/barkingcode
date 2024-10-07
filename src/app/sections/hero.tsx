@@ -17,7 +17,7 @@ export const Hero = () => {
         <Button size="lg">Get Started</Button>
       </Link>
       <div className="mt-6">
-        <SplineNext scene="https://prod.spline.design/TKwDCiLxgV7bbY7k/scene.splinecode" />
+        <SplineNext scene="https://prod.spline.design/zseuSwbSSH5L-uvj/scene.splinecode" />
       </div>
     </section>
   )

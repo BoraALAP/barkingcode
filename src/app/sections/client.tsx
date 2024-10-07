@@ -11,6 +11,7 @@ const reviews = [
   { src: '/assets/clients/ostacoLogo.svg', alt: 'Ostaco Logo' },
   { src: '/assets/clients/profilletLogo.svg', alt: 'Profillet Logo' },
   { src: '/assets/clients/ekarLogo.svg', alt: 'Ekar Logo' },
+  { src: '/assets/clients/hirooLogo.svg', alt: 'Hiroo Logo' },
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)

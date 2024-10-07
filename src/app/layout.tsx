@@ -52,6 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lexend.variable} ${montserrat.variable}`}>
+      <head>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      </head>
       <body
         className={`pt-24 ${geistSans.variable} ${geistMono.variable} antialiased`}
       >

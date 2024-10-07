@@ -32,6 +32,10 @@ export const Work = () => {
       alt: 'Profillet',
     },
     {
+      src: '/assets/work/Hiroo.jpg',
+      alt: 'Hiro Website',
+    },
+    {
       src: '/assets/work/ProfilletBranding.jpg',
       alt: 'Profillet Branding',
     },
@@ -41,7 +45,7 @@ export const Work = () => {
       {work.map((item) => (
         <div
           key={item.alt}
-          className="bg-gray-200 h-[300px] w-full group overflow-hidden rounded-lg bg-cover bg-center shadow-lg relative group aspect-[9/16]"
+          className="bg-gray-200  w-full group overflow-hidden rounded-lg bg-cover bg-center shadow-lg relative group aspect-square"
         >
           <div
             className="w-full h-full bg-cover bg-center overflow-hidden transform transition-transform duration-300 ease-in-out group-hover:scale-110"
