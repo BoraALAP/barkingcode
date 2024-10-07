@@ -6,11 +6,11 @@ import Marquee from '@/components/ui/marquee'
 import Image from 'next/image'
 
 const reviews = [
-  { src: '/assets/clients/franklogo.svg', alt: 'Frank Logo' },
-  { src: '/assets/clients/accentlogo.svg', alt: 'Accent Logo' },
-  { src: '/assets/clients/ostacologo.svg', alt: 'Ostaco Logo' },
-  { src: '/assets/clients/profilletlogo.svg', alt: 'Profillet Logo' },
-  { src: '/assets/clients/ekarlogo.svg', alt: 'Ekar Logo' },
+  { src: '/assets/clients/frankLogo.svg', alt: 'Frank Logo' },
+  { src: '/assets/clients/accentLogo.svg', alt: 'Accent Logo' },
+  { src: '/assets/clients/ostacoLogo.svg', alt: 'Ostaco Logo' },
+  { src: '/assets/clients/profilletLogo.svg', alt: 'Profillet Logo' },
+  { src: '/assets/clients/ekarLogo.svg', alt: 'Ekar Logo' },
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)
