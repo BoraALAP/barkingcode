@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import SplineNext from '@splinetool/react-spline/next'
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export const Hero = () => {
@@ -13,7 +13,9 @@ export const Hero = () => {
         Affordable monthly subscriptions for top-tier mobile and web design.
         Simplify your creative needs with our expert team.
       </p>
-      <Button size="lg">Get Started</Button>
+      <Link href="#pricing">
+        <Button size="lg">Get Started</Button>
+      </Link>
       <div className="mt-6">
         <SplineNext scene="https://prod.spline.design/TKwDCiLxgV7bbY7k/scene.splinecode" />
       </div>
